@@ -1,0 +1,9 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\pll.o"
+".\objects\startup_tm4c123.o"
+".\objects\system_tm4c123.o"
+--strict --scatter ".\Objects\GPIOInterrupt.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GPIOInterrupt.map" -o .\Objects\GPIOInterrupt.axf
