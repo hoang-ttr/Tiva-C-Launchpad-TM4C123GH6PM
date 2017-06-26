@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp
+".\objects\pll.o"
+".\objects\main.o"
+".\objects\diskio.o"
+".\objects\ff.o"
+".\objects\ssi0.o"
+".\objects\ds1307.o"
+".\objects\uart0_1.o"
+".\objects\startup_tm4c123.o"
+".\objects\system_tm4c123.o"
+--strict --scatter ".\Objects\SDCard.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SDCard.map" -o .\Objects\SDCard.axf
